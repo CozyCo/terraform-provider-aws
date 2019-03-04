@@ -89,6 +89,8 @@ The following arguments are supported:
 
 #### Schema Attributes
 
+  ~> **Note on attribute_data_type:** when defining an attribute date type of `String` or `Number` the respective attribute constraints block (e.g `string_attribute_constraints` or `number_attribute_contraints`) is required to prevent recreation of the defined schema(s). This requirement is true for both standard (e.g name, email) and custom schema attributes.
+
   * `attribute_data_type` (Required) - The attribute data type. Must be one of `Boolean`, `Number`, `String`, `DateTime`.
   * `developer_only_attribute` (Optional) - Specifies whether the attribute type is developer only.
   * `mutable` (Optional) - Specifies whether the attribute can be changed once it has been created.
